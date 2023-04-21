@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="main.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateCv</title>
+    <link rel="icon" type="image/png" href="CreateCV.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainsite">
+        <div class="header">
+            <h1><a href="index.html">CreateCv</a></h1>
+            <ul>
+                <li><a href="templates.html">templates</a></li>
+                <li><a href="createcv.html">Create cv</a></li>
+            </ul>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="firstname" id="firstnameinput">
+            <input type="text" placeholder="lastname" id="lastnameinput">
+            <input type="text" placeholder="phonenumber" id="phonenumberinput">
+            <input type="text" placeholder="email" id="emailinput">
+            <input type="text" placeholder="Zip code" id="Zipinput">
+            <input type="text" placeholder="Place of birth" id="placeofbirthinput">
+            <input type="text" placeholder="website" id="websiteinput">
+            <select name="gender" id="selectgender">
+                <option value="Select">Select</option>
+                <option value="female">female</option>
+                <option value="male">male</option>
+            </select>
+            <br>
+            <textarea name="about" id="about" cols="40" rows="20">About you:</textarea>
+            
+            <br>
+            <br>
+            <button onclick="create()">Create cv</button>
+        </div>
+       
+    </div>
+</body>
+</html>

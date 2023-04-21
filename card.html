@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateCv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="CreateCV.png">
+    <link rel="stylesheet" href="normal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js">
+        </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainsite">
+        <div class="header">
+            <h1><a href="index.html">CreateCv</a></h1>
+            <ul>
+                <li><a href="templates.html">templates</a></li>
+                <li><a href="createcv.html">Create cv</a></li>
+            </ul>
+        </div>
+        <div id="card">
+            <h1>Cv</h1>
+            <div id="name">blaa</div>
+            <div id="aboutt">blaa</div>
+            <div id="gender">blaa</div>
+            <div id="email">blaa</div>
+            <div id="phonenumber">blaa</div>
+            <div id="placeofbirth">blaa</div>
+            <div id="zipcode">blaa</div>
+            <div id="website">blaa</div>
+        </div>
+        <div id="download">Download</div>
+
+        <script>
+            document.getElementById("name").innerHTML = "name: "+localStorage.getItem('name'); 
+            document.getElementById("aboutt").innerHTML = "about: "+localStorage.getItem('about'); 
+            document.getElementById("email").innerHTML = "email: "+localStorage.getItem('email'); 
+            document.getElementById("gender").innerHTML = "gender: "+localStorage.getItem('gender'); 
+            document.getElementById("phonenumber").innerHTML = "phonenumber: "+localStorage.getItem('phonenumber'); 
+            document.getElementById("placeofbirth").innerHTML = "place of birth: "+localStorage.getItem('placeofbirth'); 
+            document.getElementById("zipcode").innerHTML = "zipcode: "+localStorage.getItem('zipcode'); 
+            document.getElementById("website").innerHTML = "website: "+localStorage.getItem('website'); 
+            var button = document.getElementById("download");
+            var makepdf = document.getElementById("card");
+    
+            button.addEventListener("click", function () {html2pdf().from(makepdf).save();});
+        </script>
+    </div>
+</body>
+</html>

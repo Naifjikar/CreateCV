@@ -1,0 +1,29 @@
+
+#card h1{
+    margin-bottom: 30px;
+}
+
+#card *{
+    color: rgb(82, 103, 218);
+    font-weight: 900;
+    font-size: larger;
+    background-color: rgb(127, 127, 127);
+    padding: 10px;
+}
+
+#download{
+    margin-top: 90px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    #download{
+        margin-top: 190px;
+        background-color: rgb(255, 255, 255);
+        
+    }
+}

@@ -1,0 +1,13 @@
+#card h1{
+    background-color: rgb(26, 202, 176);
+    border: 2px black solid;
+}
+
+
+
+
+#card *{
+    color: rgb(26, 202, 176);
+    font-weight: 900;
+    font-family: Courier, monospace;
+}
