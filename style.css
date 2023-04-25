@@ -202,5 +202,8 @@ ul li a:hover{
         height: 60vh;
         width: 100%;
     }
-
+    .maintext{
+        padding-top: 150px;
+        padding: 100px 80px;
+    }
 }
